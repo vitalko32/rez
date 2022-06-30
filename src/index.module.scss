@@ -1,0 +1,26 @@
+
+$minwidth: 320px;
+$mw: 1170;
+$md1: $mw+12;
+$md2: 992;
+$md3: 769;
+$md4: 480;
+
+.container {
+  max-width: $mw + px;
+  margin: 0 auto;
+  width: 100%;
+
+  @media (max-width: $md1+px) {
+    max-width: 992px;
+  }
+
+  @media (max-width: $md2+px) {
+    max-width: 768px;
+  }
+
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
